@@ -96,10 +96,11 @@ export function fetchCurrentPersona() {
   return 'Zac';
 }
 
-export function fetchPersonas(){
-  const personas = localStorage.getItem('personas');
-  return personas ? JSON.parse(personas) : [];
-}
+// används ej i project
+// export function fetchPersonas(){
+//   const personas = localStorage.getItem('personas');
+//   return personas ? JSON.parse(personas) : [];
+// }
 
 export function storeCurrentPersona(persona) {
   const stringifiedPersona = JSON.stringify(persona);
@@ -126,7 +127,8 @@ const responses = [
 ]
 
 export function botReply() {
-  const randomInt = generateRandomInt(2000,10000);
+  // const randomInt = generateRandomInt(2000,10000);
+  const randomInt = generateRandomInt(2000,5000);
   const randomAnswerIndex = generateRandomInt(0, responses.length - 1);
   return new Promise(resolve => { 
     setTimeout(() => {

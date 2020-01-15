@@ -1,8 +1,8 @@
-import React, { Component } from 'react';
-import PropTypes from 'prop-types';
-import CreateNewComment from './CreateNewComment';
-import SingleComment from './SingleComment';
-import * as api from '../api';
+import React, { Component } from "react";
+import PropTypes from "prop-types";
+import CreateNewComment from "./CreateNewComment";
+import SingleComment from "./SingleComment";
+import * as api from "../api";
 
 class Comments extends Component {
   state = {
